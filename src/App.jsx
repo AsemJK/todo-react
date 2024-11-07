@@ -1,14 +1,14 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import Navbar from "./components/Navbar";
 import "./assets/css/style.css";
 import Todo from "./components/Todo";
 
-const App = () => {
-  return (
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
     <section>
       <Navbar />
       <Todo />
     </section>
-  );
-};
-
-export default App;
+  </StrictMode>
+);
