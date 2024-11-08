@@ -42,6 +42,7 @@ body {
 }
 .todo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -60,4 +61,21 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+}
+.todo-li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 300px;
+  font-size: large;
+}
+.todo div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
 }
